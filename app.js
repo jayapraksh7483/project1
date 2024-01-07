@@ -62,7 +62,7 @@ store.on("error",()=>{
 
 const sessionOptions={
   store,
-  secret:"mysupersecretstring",
+  secret: process.env.SECRET,
   resave:false,
   saveUninitialized:true,
   cookie:{
